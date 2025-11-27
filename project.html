@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Contact - My Portfolio</title>
+    <style>
+        /* Define a color palette and basic reset */
+        :root {
+            --primary-color: #335d8e; /* Dark Blue */
+            --secondary-color: #f7f7f7; /* Light Gray/Off-white */
+            --text-color: #150a24; /* Dark Gray */
+            --accent-color: #210a0a13; /* Reddish Accent */
+            --font-family: 'Arial', sans-serif;
+        }
+
+        /* Basic Reset and Box Sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            padding-bottom: 60px; /* Space for fixed footer */
+        }
+
+        /* Header and Navigation Bar (Duplicated for consistency) */
+        .navbar {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Main Content Layout */
+        .content-container {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 1.5rem;
+        }
+
+        /* Section Styling */
+        section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Work Experience Styling */
+        .experience-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-left: 4px solid var(--accent-color);
+            background-color: var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 0.3rem;
+            color: var(--text-color);
+            font-size: 1.2rem;
+        }
+
+        .experience-item p.date {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Skills List - Using Flexbox for Layout */
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Project Card Layout */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 15px;
+        }
+
+        .project-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-info a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        /* Footer (Duplicated for consistency) */
+        .footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: var(--primary-color);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="aboutus.html" class="logo">My Portfolio</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="aboutus.html">🏠 About Us</a></li>
+                    <li><a href="project.html">🛠 Projects & Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-container">
+        
+        <section id="experience">
+            <h2> Work & Academic Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Scratch</h3>
+                <p class="date">sep 2024 - Present</p>
+                <p></p>  A fun game where the player navigates a character through a maze to reach the finish line. The game uses arrow keys for movement and detects collisions with walls. Players can track their time or score for completing the maze.
+            </div>
+
+            <div class="experience-item">
+                <h3> A web platform</h3>
+                <p class="date">Oct 2024</p>
+                <p>.A web platform that allows organizations to post volunteer opportunities and lets volunteers register, apply, and track their activities. It helps coordinate events, manage volunteer profiles, and streamline communication between organizers and participants.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2> Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>Internal CSS</li>
+                <li>CSS Layout</li>
+                <li>Git/GitHub</li>
+                <li>Problem Solving</li>
+                <li>excel</li>
+                <li>ATM machine</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>🛠 Projects Showcase</h2>
+            <div class="project-grid">
+                
+                <article class="project-card">
+                    <img src="Screen-Shot-2024-08-15-at-2.10.19-PM.png" alt="Project 1 Thumbnail">
+                    <div class="project-info">
+                        <h3>scratch game</h3>
+                        <p> I created a simple game using Scratch to learn basic programming concepts. The game includes interactive elements, loops, and condition-based actions. This project helped me improve my logical thinking and creativity in game development.</p>
+                        <a href="#" target="_blank">View Project &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="set-realistic-atm-machine-isolated-atm-bank-cash-machine-with-interface-keypad-slot-card_320857-1122.avif" alt="Project 2 Thumbnail">
+                    <div class="project-info">
+                        <h3>ATM machine</h3>
+                        <p>I created a small ATM machine simulation as a beginner-level project. It includes basic features like PIN verification and balance inquiry. This project helped me understand conditional logic and program flow.</p>
+                        <a href="#" target="_blank">View Project &rarr;</a>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>📧 Contact Me</h2>
+            <div class="contact-info">
+                <p>Feel free to reach out for collaboration or just to say hello!</p>
+                <p><strong>Email:</strong> <a href="mailto:saliha.mubeen19@gmail.com">saliha.mubeen19@gmaail.com</a></p>
+                <p><strong>Phone:</strong> 0300-6596226</p>
+                <p><strong>GitHub:</strong> saliha mubeen@gith
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Saliha Mubeen Built with HTML & Internal CSS.</p>
+    </footer>
+
+</body>
+</html>

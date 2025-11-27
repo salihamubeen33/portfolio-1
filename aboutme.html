@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me -Saliha Mubeen Portfolio</title>
+    <style>
+        /* Define the Black, Blue, and White Color Palette */
+        :root {
+            --primary-color: #007bff; /* Bright Blue */
+            --secondary-color: #f7f7f7; /* White (Background) */
+            --text-color: #333333; /* Dark Gray/Black for readability */
+            --highlight-color: v#313589; /* Pure Black (for emphasis/accents) */
+            --font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* Basic Reset and Box Sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            min-height: 100vh;
+        }
+
+        /* Header and Navigation Bar */
+        .navbar {
+            background: var(--highlight-color); /* Black Header */
+            color: rgb(246, 245, 245);
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(151, 141, 141, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary-color); /* Blue Logo */
+            text-decoration: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color); /* Blue hover effect */
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        /* Main Content Section - About Me */
+        .about-section {
+            width: 80%;
+            max-width: 1200px;
+            margin: 6rem auto;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 2.5rem;
+            background-color: var(--secondary-color);
+            border-radius: 12px;
+            border: 1px solid #eee;
+        }
+
+        .profile-pic {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 6px solid var(--primary-color); /* Blue Border */
+            flex-shrink: 0;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .intro-text h1 {
+            color: var(--highlight-color); /* Black Heading */
+            margin-bottom: 0.5rem;
+            font-size: 3rem;
+        }
+
+        .intro-text h2 {
+            color: var(--primary-color); /* Blue Subheading */
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+
+        .intro-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: var(--text-color);
+        }
+
+        .icon-link {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 28px;
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
+        }
+        
+        .icon-link:hover {
+            color: var(--highlight-color);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: var(--highlight-color); /* Black Footer */
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="aboutus.html" class="logo"> My Portfolio</a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="aboutus.html" class="active">🏠 About Us</a></li>
+                    <li><a href="project.html">🛠 Projects & Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-section">
+        
+        <div class="profile-pic">
+    <img src="girl-dummy-removebg-preview (1).png" alt="Picture of [Your Name]">
+        </div>
+        
+        <div class="intro-text">
+            <header>
+                <h1>Hi, I'm Saliha Mubeen</h1>
+                <h2>Front-End Developer & Student at Kinnaird </h2>
+            </header>
+            
+            <p>
+                Welcome to my portfolio! I am a dedicated Computer Science student with a strong academic foundation in programming and software development principles. I possess a keen interest in problem-solving and logical thinking. I am continuously learning new technologies to enhance my technical and analytical skills. Through academic projects and practical work, I strive to apply theoretical concepts to real-world scenarios. I value writing clean, efficient, and well-structured code. I am highly motivated to grow as a software professional through continuous learning and hands-on experience. My goal is to contribute effectively to innovative and impactful software solutions.
+            </p>
+            
+                
+
+
+           
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 saliha. All rights reserved. | Theme: Black, Blue & White</p>
+    </footer>
+
+</body>
+</html>
